@@ -1,1 +1,90 @@
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(135deg,#ff4d6d,#ff758f);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+/* NAV */
+nav{
+  margin:20px;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+  padding:8px 16px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.2);
+}
+
+/* cam kart */
+.card{
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.15);
+  padding:30px;
+  border-radius:25px;
+  margin:20px;
+  width:90%;
+  max-width:500px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+/* sayaç */
+.counter{
+  font-size:20px;
+  font-weight:600;
+}
+
+/* galeri */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:12px;
+}
+.grid img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* buton */
+.btn{
+  background:white;
+  color:#ff4d6d;
+  padding:12px 20px;
+  border:none;
+  border-radius:30px;
+  margin-top:15px;
+  cursor:pointer;
+}
+
+/* zarf */
+.envelope{
+  font-size:80px;
+  cursor:pointer;
+  transition:.3s;
+}
+.envelope:hover{
+  transform:scale(1.2);
+}
+
+/* kalpler */
+.heart{
+  position:fixed;
+  top:-10px;
+  animation:fall 5s linear infinite;
+}
+@keyframes fall{
+  to{transform:translateY(110vh);}
+}
